@@ -1,44 +1,44 @@
 
 # 🗺️ City Boundary Map of Turkey
 
-Türkiye'deki şehir sınırlarını geometrik olarak çizip görselleştiren bir Python projesi.
+A Python project that geometrically draws and visualizes city boundaries in Turkey.
 
-## 📦 Özellikler
+## 📦 Features
 
-- CSV dosyasından şehir köşe koordinasyonlarını okuyarak çokgen oluşturur.
-- Shapefile (.shp) ile Türkiye haritasını çizer.
-- Şehir adlarını ortalarına yerleştirerek gösterir.
-- Gelişmiş hata kontrolü ve şık tasarım.
-- Modüler yapıda, GitHub projelerine uygun.
+- Reads city corner coordinates from a CSV file to create polygons.
+- Draws the Turkey map using a Shapefile (.shp).
+- Displays city names centered on their polygons.
+- Advanced error handling and stylish design.
+- Modular structure suitable for GitHub projects.
 
-## 🔧 Kurulum
+## 🔧 Installation
 
 ```bash
-git clone https://github.com/kullanici-adi/city-boundary-map.git
+git clone https://github.com/username/city-boundary-map.git
 cd city-boundary-map
 pip install -r requirements.txt
 python main.py
 ```
 
-## 📁 Girdi Formatı (`cities.csv`)
+## 📁 Input Format (`cities.csv`)
 
 | pn      | southwest_lat | southwest_lon | northeast_lat | northeast_lon |
 |---------|----------------|----------------|----------------|----------------|
 | Ankara  | 39.5           | 32.5           | 40.1           | 33.1           |
 
-## 🧙‍♂️ Kullanım
+## 🧙‍♂️ Usage
 
 ```bash
 python main.py
 ```
 
-Program `data/` klasöründeki `cities.csv` ve `ne_110m_admin_0_countries.shp` dosyalarını kullanarak haritayı görselleştirir.
+The program uses `cities.csv` and `ne_110m_admin_0_countries.shp` files located in the `data/` folder to visualize the map.
 
-## 🎯 Örnek Görsel
+## 🎯 Sample Image
 
-![Harita Görseli](assets/demo.png)
+![Map Sample](assets/demo.png)
 
-## 📁 Proje Yapısı
+## 📁 Project Structure
 
 ```
 city-boundary-map/
@@ -54,11 +54,11 @@ city-boundary-map/
 └── main.py
 ```
 
-## 👨‍💻 Geliştirici
+## 👨‍💻 Developer
 
-Bu proje [Hakan Kaygusuz](https://github.com/hakankygsz) tarafından geliştirilmiştir.  
-Katkıda bulunmak istersen pull request atabilirsin 👊
+This project is developed by [Hakan Kaygusuz](https://github.com/hakankygsz).  
+Feel free to contribute via pull requests 👊
 
-## 🧾 Lisans
+## 🧾 License
 
 MIT License
